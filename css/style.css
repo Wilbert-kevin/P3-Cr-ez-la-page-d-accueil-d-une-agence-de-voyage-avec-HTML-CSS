@@ -430,20 +430,18 @@ footer {
     FILTRES     */
     .filtres {
         flex-flow: row wrap;
+        gap: 0;
     }
     .filtres_categories {
         flex-wrap: wrap;
+        gap: 10px;
     }
     .aspect_filtres {
         flex:1;
-    }
-
-    
-    /*
-    MAIN */
-    
+    } 
 
     /* Herbergements & Populaires */
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
         
@@ -454,11 +452,19 @@ footer {
     
     /*
     HEBERGEMENTS */
+
     .hebergements-cards {
         grid-template-columns: none;
     }
 
+    /*   Populaire */
 
+    .populaires-cards a {
+        width: 100%;
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
 
     /*
     Activites */
@@ -471,6 +477,12 @@ footer {
 
     /*
     FOOTER  */
-    
+
+    footer {
+        grid-template-columns: none;
+        gap: 50px;
+        padding: 30px;
+        width: auto;
+    }
    
 }
